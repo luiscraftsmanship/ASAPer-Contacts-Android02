@@ -44,10 +44,10 @@ public class SelectContactsActivity extends SherlockActivity {
 	    startActivity(intent);
 	}*/
     
-    /*public void onClickImportContacts(View view) {
-	    Intent intent = new Intent(this, ContactListActivity.class);
+    public void onClickImportContacts(View view) {
+	    Intent intent = new Intent(this, ReadContacts.class);
 	    startActivity(intent);
-	}*/
+	}
 	
 	/*public void onClickCreateGroup(View view) {
 	    Intent intent = new Intent(this, GroupsActivity.class);
