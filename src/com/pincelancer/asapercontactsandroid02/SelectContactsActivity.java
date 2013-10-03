@@ -11,21 +11,21 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 
-public class HomeActivity extends SherlockActivity {
+public class SelectContactsActivity extends SherlockActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	
     	 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_activity_layout);
+        setContentView(R.layout.select_contacts_layout);
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
-		getSupportActionBar().setCustomView(R.layout.home_activity_menu);
+		getSupportActionBar().setCustomView(R.layout.select_contacts_menu);
 		
-		getSupportActionBar().setIcon(R.drawable.menu_highlighted );
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		//getSupportActionBar().setIcon(R.drawable.menu_highlighted );
+        //getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setBackgroundDrawable(
         		new ColorDrawable(Color.parseColor("#38393B")));
     }
@@ -39,15 +39,15 @@ public class HomeActivity extends SherlockActivity {
     }
     
     
-    public void clickButtonSendFeedback(View view) {
+    /*public void clickButtonSendFeedback(View view) {
 	    Intent intent = new Intent(this, SendFeedbackActivity.class);
 	    startActivity(intent);
-	}
+	}*/
     
-    public void onClickImportContacts(View view) {
-	    Intent intent = new Intent(this, SelectContactsActivity.class);
+    /*public void onClickImportContacts(View view) {
+	    Intent intent = new Intent(this, ContactListActivity.class);
 	    startActivity(intent);
-	}
+	}*/
 	
 	/*public void onClickCreateGroup(View view) {
 	    Intent intent = new Intent(this, GroupsActivity.class);
